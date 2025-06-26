@@ -55,5 +55,8 @@ dtoverlay=dwc2,dr_mode=host
 # Set the Arm A76 core frequency (in MHz; default 2400).
 arm_freq=3800
 
+# Optimized fan control
+dtoverlay=gpio-fan,gpiopin=14,temp=50000
+
 EOF
 echo "[fqs-3800.sh] config.txt has been set to overclock CPU to 3800MHz."
